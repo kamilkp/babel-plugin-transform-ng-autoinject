@@ -1,0 +1,19 @@
+{
+  "name": "babel-plugin-transform-ng-autoinject",
+  "version": "1.0.0",
+  "description": "Transform __autoinject($rootScope) to angularjs' inject((_$rootScope_) => $rootScope = _$rootScope_)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kamil Pękala",
+  "license": "MIT",
+  "dependencies": {
+    "babel-types": "^6.26.0"
+  },
+  "devDependencies": {
+    "babel-generator": "^6.26.0",
+    "babel-traverse": "^6.26.0",
+    "babylon": "^7.0.0-beta.33"
+  }
+}
