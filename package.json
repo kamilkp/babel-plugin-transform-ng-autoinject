@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-ng-autoinject",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Transform __autoinject($rootScope) to angularjs' inject((_$rootScope_) => $rootScope = _$rootScope_)",
   "main": "index.js",
   "scripts": {
