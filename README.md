@@ -1,5 +1,7 @@
 <img src="https://img.shields.io/badge/license-MIT%20License-blue.svg">
 
+# FOR BABEL 7.X INSTALL V2.X - FOR OLDER V1.X
+
 # babel-plugin-transform-ng-autoinject
 
 When writing tests for AngularJS 1.x ease the pain of writing enormous boilerplate like this:
