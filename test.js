@@ -1,7 +1,8 @@
-const babylon      = require('babylon');
-const traverse     = require('babel-traverse').default;
-const t            = require('babel-types');
-const generate     = require('babel-generator').default;
+import * as babylon from 'babylon';
+import traverse from '@babel/traverse';
+import { types as t } from '@babel/core';
+import generate from '@babel/generator';
+import visitor from './visitor';
 
 const input = `function test() {
   __autoinject($rootScope, $httpBackend);
@@ -25,7 +26,7 @@ function ast2str(ast) {
   }, '  ');
 }
 
-traverse(ast, require('./visitor'));
+traverse(ast, visitor);
 
 const gen = generate(ast, {
   // retainLines: true,

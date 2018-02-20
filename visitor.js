@@ -1,6 +1,6 @@
-const t = require('babel-types');
+import { types as t } from '@babel/core';
 
-module.exports = {
+export default {
   CallExpression(path) {
     if (path.node.callee.name === '__autoinject' &&
         path.node.arguments.every(arg => t.isIdentifier(arg))

@@ -17,6 +17,8 @@
  * The plugin simply transforms the __autoinject expression into the former inject(...)
  */
 
-module.exports = {
-  visitor: require('./visitor')
+export default function () {
+  return {
+    visitor: require('./visitor')
+  };
 };
