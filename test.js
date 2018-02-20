@@ -2,7 +2,7 @@ import * as babylon from 'babylon';
 import traverse from '@babel/traverse';
 import { types as t } from '@babel/core';
 import generate from '@babel/generator';
-import visitor from './visitor';
+import visitor from './src/visitor';
 
 const input = `function test() {
   __autoinject($rootScope, $httpBackend);

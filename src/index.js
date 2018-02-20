@@ -16,9 +16,10 @@
  *
  * The plugin simply transforms the __autoinject expression into the former inject(...)
  */
+import visitor from './visitor';
 
 export default function () {
   return {
-    visitor: require('./visitor')
+    visitor,
   };
 };
