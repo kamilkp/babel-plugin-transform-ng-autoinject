@@ -35,3 +35,18 @@ beforeEach(inject((_$rootScope_, _$httpBackend_) => {
   });
 }));
 ```
+
+# Installation
+
+```
+npm install --save-dev babel-plugin-transform-ng-autoinject
+```
+
+.babelrc
+--
+```json
+{
+  "presets": ["es2016"],
+  "plugins": ["transform-ng-autoinject"]
+}
+```
